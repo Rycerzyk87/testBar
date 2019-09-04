@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Toolbar</title>
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="wapper">
-        <button>Show Bar</button>
-        <toolbar>
-
-        </toolbar>
+    <div class="wrapper">
+        <div class="show">
+            <a>Show Bar</a>
+        </div>
+        <div class="toolbar">
+            <div class="barCenter">
+                <p class="text">Lorem ipsum dolor sit amet.</p>
+                <button>Get widgets</button>
+            </div>
+            <button class="close">x</button>
+        </div>
     </div>
-    <script src="widget.js" charset="utf-9"></script>
+
     <script type="text/javascript">
-        let myBar = newBar({
+        let myBar = new Bar({
             message: 'Add beautiful widgets to your website',
-            position: 'top'
+            position: 'top',
         });
     </script>
+    <script src="widget.js" charset="utf-9"></script>
 </body>
 
 </html>
