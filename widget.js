@@ -1,4 +1,3 @@
-
 startBtn = document.querySelector(".show a");
 textArea = document.querySelector(".text");
 closeBtn = document.querySelector(".close");
@@ -20,6 +19,11 @@ getWidgets.addEventListener("click", () => {
 startBtn.addEventListener("click", () => {
     textArea.innerHTML = myBar.txt;
     bar.style.display = 'block';
+    if (myBar.position === 'top') {
+        bar.style.top = 0;
+    } else {
+        bar.style.bottom = 0;
+    }
 })
 
 closeBtn.addEventListener("click", () => {
